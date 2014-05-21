@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140521 18:09:37.001" generator="Robot 2.8.4 (Python 2.7.6 on win32)">
+<suite source="R:\course\HotmailTest.txt" id="s1" name="HotmailTest">
+<test id="s1-t1" name="Log in Testing">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://www.hotmail.com</arg>
+</arguments>
+<msg timestamp="20140521 18:09:37.432" level="INFO">Opening browser 'firefox' to base url 'http://www.hotmail.com'</msg>
+<status status="PASS" endtime="20140521 18:09:58.094" starttime="20140521 18:09:37.431"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140521 18:10:01.550" starttime="20140521 18:09:58.095"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>login</arg>
+<arg>front_mod@hotmail.com</arg>
+</arguments>
+<msg timestamp="20140521 18:10:01.550" level="INFO">Typing text 'front_mod@hotmail.com' into text field 'login'</msg>
+<status status="PASS" endtime="20140521 18:10:02.180" starttime="20140521 18:10:01.550"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>passwd</arg>
+<arg>fr0nt_m0d</arg>
+</arguments>
+<msg timestamp="20140521 18:10:02.182" level="INFO">Typing text 'fr0nt_m0d' into text field 'passwd'</msg>
+<status status="PASS" endtime="20140521 18:10:02.408" starttime="20140521 18:10:02.182"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>SI</arg>
+</arguments>
+<msg timestamp="20140521 18:10:02.409" level="INFO">Clicking button 'SI'.</msg>
+<status status="PASS" endtime="20140521 18:10:02.680" starttime="20140521 18:10:02.409"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Inbox</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20140521 18:10:16.784" starttime="20140521 18:10:02.681"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains Element">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>c_meun</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" endtime="20140521 18:10:16.928" starttime="20140521 18:10:16.785"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>c_meun</arg>
+</arguments>
+<msg timestamp="20140521 18:10:16.928" level="INFO">Clicking element 'c_meun'.</msg>
+<status status="PASS" endtime="20140521 18:10:31.113" starttime="20140521 18:10:16.928"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140521 18:10:31.113" critical="yes" starttime="20140521 18:09:37.431"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140521 18:10:31.115" starttime="20140521 18:09:37.002"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="HotmailTest">HotmailTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

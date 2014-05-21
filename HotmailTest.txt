@@ -1,0 +1,23 @@
+*** Settings ***
+Library    Selenium2Library
+
+
+*** Variables ***
+
+
+*** Testcases ***
+Log in Testing
+   Open Browser    http://www.hotmail.com
+   Maximize Browser Window
+   Input Text    login    
+   Input Text    passwd   
+   Click button    SI
+   Wait Until Page Contains    Inbox    10
+   Wait Until Page Contains Element    c_meun    15
+   Click Element    c_meun 
+   #Wait Until Page Contains Element     xpath=//*[@id="c_signout"]     5
+   #Click Element    xpath=//*[@id="c_signout"]
+
+
+
+*** Keywords ***

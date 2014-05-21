@@ -1,0 +1,26 @@
+*** Settings ***
+Library    Selenium2Library
+Library    OperatingSystem
+
+*** Variables ***
+
+
+*** Testcases ***
+#My first test case
+   #Set Environment Variable    webdriver.ie.driver    r:\course\IEDriverServer.exe
+   #Open Browser    http://www.kcprofessional.com   ie
+   #Close Browser
+
+   #Open Browser    http://www.kcprofessional.com
+   #Input Text    q    Testing
+   
+My second test case
+   Open Browser    http://www.mykleenextissue.com
+   Maximize Browser Window
+   Click Link    SIGN IN
+   Click Link    Forget Password
+   Input Text    ctl00$ContentPlaceHolder1$txtForgotPasswordEmail    atchariya.asawawut@kcc.com
+
+
+*** Keywords ***
+
