@@ -1,0 +1,9 @@
+*** Settings ***
+Library    Selenium2Library
+Library    OperatingSystem
+
+*** Testcases ***
+Test with Chrome
+   	Set Environment Variable    webdriver.chrome.driver    r:\course\chromedriver.exe
+    Open Browser    http://www.google.com   chrome
+    Close Browser

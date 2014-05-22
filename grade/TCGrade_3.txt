@@ -1,9 +1,5 @@
 *** Settings ***
-Library    Selenium2Library
-
-
-*** Variables ***
-${DEMO URL}    http://demo-jenkins-web.herokuapp.com/
+Resource    resource_grade.txt
 
 *** Testcases ***
 Rule for Convert score to grade
@@ -12,28 +8,13 @@ Rule for Convert score to grade
     #  Score  | Grade #
     #-----------------#
 
+        0          F
+        40         F
+        50         D
+        60         C
+        70         B
         80         A
-        #40        F
-        #50        D
+        90         A
+        100        A
 
-
-*** Keywords ***
-Flow for convert score to grade
-    [Arguments]    ${score}   ${expected_grade} 
-    Go to grade page
-    Enter score    ${score} 
-    Expected grade result    ${expected_grade}
-
-Go to grade page
-    Open Browser    ${DEMO URL}
-
-Enter score
-    [Arguments]    ${score}
-    Input Text    score    ${score}
-    Click Button   convert
-
-Expected grade result
-    [Arguments]    ${expected_grade}
-    Wait Until Page Contains    ${expected_grade}
-    Close Browser
 
